@@ -1,13 +1,7 @@
 name: Build and Test
 
 on:
-  push:
-    branches:
-      - '**'
-    tags:
-      - '*'
-  release:
-    types: [ published ]
+  workflow_dispatch:
 env:
   DOCKER_REGISTRY: fptnvpn
   IMAGE_NAME: fptn-vpn-server
